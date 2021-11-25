@@ -91,7 +91,7 @@ $sql = 'CREATE Database ruapdb IF NOT EXISTS ruapdb';
  echo "Error creating table: " . $conn->error;
  }
  $conn->close();
-?>
+
 // Insert registration info
 if (!empty($_POST))
 {
