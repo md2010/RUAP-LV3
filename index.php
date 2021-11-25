@@ -75,7 +75,7 @@ if (mysqli_connect_errno())
 {
     die('Failed to connect to MySQL: '.mysqli_connect_error());
 }
-$sql = 'CREATE Database ruapdb IF NOT EXISTS ruapdb';
+$sql = 'CREATE Database db IF NOT EXISTS db';
  if ($conn->query($sql) === TRUE) {
  echo "Database created successfully";
  } else {
