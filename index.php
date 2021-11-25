@@ -82,15 +82,15 @@ $sql = 'CREATE Database db IF NOT EXISTS db';
  echo "Error creating database: " . $conn->error;
  }
  mysqli_select_db($conn,$db);
- $sql_create = "CREATE TABLE registration_tbl(id INT NOT NULL
+ /*$sql_create = "CREATE TABLE registration_tbl(id INT NOT NULL
  AUTO_INCREMENT, PRIMARY KEY(id), name VARCHAR(30), email
  VARCHAR(30), date DATE);";
  if ($conn->query($sql_create) === TRUE) {
  echo "Table registration_tbl created successfully";
  } else {
  echo "Error creating table: " . $conn->error;
- }
- $conn->close();
+ }*/
+ //$conn->close();
 
 // Insert registration info
 if (!empty($_POST))
