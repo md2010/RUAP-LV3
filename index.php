@@ -65,7 +65,7 @@ $pwd = "Trebamo10";
 $db = "db";
 $conn = mysqli_init();
 
-mysqli_ssl_set($conn,NULL,NULL, "c:\ssl\BaltimoreCyberTrustRoot.crt.pem", NULL, NULL);
+mysqli_ssl_set($conn,NULL,NULL, "BaltimoreCyberTrustRoot.crt.pem", NULL, NULL);
 
 // Establish the connection
 mysqli_real_connect($conn, $host, $user, $pwd, $db, 3306, NULL, MYSQLI_CLIENT_SSL);
